@@ -39,7 +39,7 @@ function animation() {
         forHome.style.display = 'block';
         forHomeTitle.style.display = 'block';
         forHomeList.style.display = 'block';
-
+        forApartmentsList.style.display = 'none';
         
         Velocity(forHome,
             {
@@ -66,6 +66,9 @@ function animation() {
                 duration: 1000,
                 display: 'none'
             });
+
+        // forApartmentSq.style.display = 'none';
+
         Velocity(forApartmentTitle,
             {
                 opacity: 0
@@ -74,14 +77,9 @@ function animation() {
                 duration: 1000,
                 display: 'none'
             });
-        Velocity(forApartmentsList,
-            { 
-                opacity: 0 
-            },
-            {
-                duration: 0,
-                display: 'none'
-            });
+
+        // forApartmentTitle.style.display = 'none';
+
         Velocity(containerTitle,
             {
                 opacity: 0,
@@ -91,6 +89,9 @@ function animation() {
                 duration: 1000,
                 display: 'none'
             });
+
+            // containerTitle.style.display = 'none';
+
         Velocity(forHomeSq,
             {
                 opacity: 1,
