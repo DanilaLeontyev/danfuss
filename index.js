@@ -11,6 +11,7 @@ function animation() {
     const forHomeTitle = document.getElementById("forHome--title");
     const forApartmentTitle = document.getElementById("forApartment--title");
 
+    const forHomeList = document.getElementById('forHome--list');
     container.onclick = function (ev) {
         let target = event.target;
 
@@ -30,7 +31,7 @@ function animation() {
             },
             {
                 duration: 1000,
-               
+
             });
         Velocity(forApartment,
             {
@@ -38,7 +39,7 @@ function animation() {
             },
             {
                 duration: 1000,
-                
+
             });
         Velocity(forApartmentSq,
             {
@@ -83,6 +84,31 @@ function animation() {
                 duration: 1000,
                 delay: 300
             });
+        Velocity(forHomeList,
+            {
+                opacity: 1
+            },
+            {
+                duration: 1000,
+                display: 'block'
+            })
+    }
+
+    function animateApartments(node) {
+        Velocity(forApartment,
+            {
+                width: '80%'
+            },
+            {
+                duration: 2000
+            })
+        Velocity(forHome,
+            {
+                width: '20%'
+            },
+            {
+                duration: 2000
+            })
     }
 }
 

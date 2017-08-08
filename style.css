@@ -2,6 +2,7 @@
   width: 1002px;
   height: 720px;
   box-sizing: border-box;
+  display: flex;
   margin: 10px 20px;
   background: rgb(51, 51, 51);
 }
@@ -16,13 +17,12 @@
   letter-spacing: 10px;
 }
 .forApartment{
-    box-sizing: border-box;
+  box-sizing: border-box;
   width: 50%;
   height: 100%;
   background: url('img/jpg_1.jpg') no-repeat;
-  float: left;
   background-size: cover;
-  background-position: bottom left;
+  background-position: 30% 100%;
   border: 1px solid red;
  
 }
@@ -31,11 +31,11 @@
   width: 50%;
   height: 100%;
   background: url('img/jpg_2.jpg') no-repeat;
-  float: right;
+  background-position: 30% 100%;
   background-size: cover;
-  background-position: bottom left;
   border: 1px solid red;
 }
+
 .forHome--square {
   margin-left: 40px;
   margin-top: 320px;
@@ -68,21 +68,6 @@
   line-height: 35px;
 }
 
-.forHome--list {
-    list-style-position: inside;
-    list-style: none;
-    color: white;
-    font-size: 16px;
-    margin-top: 72px;
-    margin-left: -40px;
-}
-
-.forHome--list li {
-    height: 116px;
-    background: rgba(135, 142, 148, 0.3);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 .forApartment--list {
     list-style: none;
     list-style-position: inside;
@@ -90,10 +75,38 @@
     font-size: 16px;
     margin-top: 72px;
     display: none;
+    padding: 15px;
 }
 
-.forApartment--list li {
-    height: 117px;
+.forHome--list {
+    list-style-position: inside;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 72px;
+    margin-left: -40px;
+    opacity: 0;
+    display: none;
+}
+  
+
+.forHome--list li {
+    height: 116px;
     background: rgba(135, 142, 148, 0.3);
-    
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease-in-out 0.5ms; 
+}
+.forHome--list li:hover {
+  background-color: rgba(135, 142, 148, 0.0);
+}
+.list--item {
+  display: inline-block; 
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-left: 40px 50px;
+  vertical-align: -50px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
