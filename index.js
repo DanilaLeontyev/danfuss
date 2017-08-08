@@ -11,7 +11,11 @@ function animation() {
     const forHomeTitle = document.getElementById("forHome--title");
     const forApartmentTitle = document.getElementById("forApartment--title");
 
-    const forHomeList = document.getElementById('forHome--list');
+    const forHomeList1 = document.getElementById('list--item_1');
+    const forHomeList2 = document.getElementById('list--item_2');
+    const forHomeList3 = document.getElementById('list--item_3');
+    const forHomeList4 = document.getElementById('list--item_4');
+
     container.onclick = function (ev) {
         let target = event.target;
 
@@ -84,13 +88,45 @@ function animation() {
                 duration: 1000,
                 delay: 300
             });
-        Velocity(forHomeList,
+        Velocity(forHomeList4,
             {
-                opacity: 1
+                opacity: 1,
+                top: 0
             },
             {
                 duration: 1000,
-                display: 'block'
+                display: 'block',
+                delay: 400
+            })
+        Velocity(forHomeList3,
+            {
+                opacity: 1,
+                top: 0
+            },
+            {
+                duration: 1000,
+                display: 'block',
+                delay: 600
+            })
+        Velocity(forHomeList2,
+            {
+                opacity: 1,
+                top: 0
+            },
+            {
+                duration: 1000,
+                display: 'block',
+                delay: 800
+            })
+        Velocity(forHomeList1,
+            {
+                opacity: 1,
+                top: 0
+            },
+            {
+                duration: 1000,
+                display: 'block',
+                delay: 1000
             })
     }
 
