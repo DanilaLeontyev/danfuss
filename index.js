@@ -40,7 +40,7 @@ function animation() {
         forHomeTitle.style.display = 'block';
         forHomeList.style.display = 'block';
 
-        forApartmentsList.style.display = 'none';
+        forApartmentsList.style.visibility = 'hidden';
 
         Velocity(forHome,
             {   opacity: 1,
@@ -167,7 +167,8 @@ function animation() {
         forApartmentTitle.style.display = 'block';
         forApartment.style.display = 'block';
         forApartmentsList.style.display = 'block';
-        forHomeList.style.display = 'none';
+
+        forHomeList.style.visibility = 'hidden';
 
         Velocity(forApartment,
             {
