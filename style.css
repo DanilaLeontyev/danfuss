@@ -1,5 +1,5 @@
 .container {
-  width: 1002px;
+  width: 1000px;
   height: 720px;
   box-sizing: border-box;
   display: flex;
@@ -18,22 +18,20 @@
 }
 .forApartment{
   box-sizing: border-box;
-  width: 50%;
+  width: 500px;
   height: 100%;
   background: url('img/jpg_1.jpg') no-repeat;
   background-size: cover;
   background-position: 30% 100%;
-  border: 1px solid red;
  
 }
 .forHome {
   box-sizing: border-box;
-  width: 50%;
+  width: 500px;
   height: 100%;
   background: url('img/jpg_2.jpg') no-repeat;
   background-position: 30% 100%;
   background-size: cover;
-  border: 1px solid red;
 }
 
 .forHome--square {
@@ -84,7 +82,8 @@
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.5s ease-in-out 0.5ms; 
     top: 100px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 .apartmentsList--item:hover{
   background-color: rgba(135, 142, 148, 0.0);
@@ -117,7 +116,8 @@
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.5s ease-in-out 0.5ms; 
     top: 100px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 .homeList--item:hover{
   background-color: rgba(135, 142, 148, 0.0);
