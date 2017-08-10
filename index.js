@@ -43,7 +43,8 @@ function animation() {
         forApartmentsList.style.visibility = 'hidden';
 
         Velocity(forHome,
-            {   opacity: 1,
+            {
+                opacity: 1,
                 width: "800px"
             },
             {
@@ -71,7 +72,6 @@ function animation() {
                 duration: 460,
                 easy: 'easy'
             });
-        // forApartmentSq.style.display = 'none';
 
         Velocity(forApartmentTitle,
             {
@@ -81,7 +81,6 @@ function animation() {
                 duration: 460,
                 easy: 'easy'
             });
-        // forApartmentTitle.style.display = 'none';
 
         Velocity(containerTitle,
             {
@@ -92,9 +91,6 @@ function animation() {
                 duration: 460,
                 easy: 'easy'
             });
-
-        // containerTitle.style.display = 'none';
-
         Velocity(forHomeSq,
             {
                 opacity: 1,
@@ -117,6 +113,14 @@ function animation() {
                 delay: 830,
                 easy: 'easy'
             });
+        Velocity(forHomeList,
+            {
+                opacity: 1
+            },
+            {
+                duration: 800,
+                visibility: 'visible'
+            })
         Velocity(forHomeList4,
             {
                 opacity: 1,
@@ -125,7 +129,7 @@ function animation() {
             {
                 duration: 500,
                 visibility: 'visible',
-                delay: 1200,
+                delay: 800,
                 easy: 'easy'
             })
         Velocity(forHomeList3,
@@ -136,7 +140,7 @@ function animation() {
             {
                 duration: 500,
                 visibility: 'visible',
-                delay: 1450,
+                delay: 1000,
                 easy: 'easy'
             })
         Velocity(forHomeList2,
@@ -147,7 +151,7 @@ function animation() {
             {
                 duration: 500,
                 visibility: 'visible',
-                delay: 1700,
+                delay: 1200,
                 easy: 'easy'
             })
         Velocity(forHomeList1,
@@ -158,8 +162,50 @@ function animation() {
             {
                 duration: 500,
                 visibility: 'visible',
-                delay: 1950,
+                delay: 1400,
                 easy: 'easy'
+            })
+
+
+        //возвращаем к начальным значениям
+        Velocity(forApartmentsList,
+            {
+                opacity: 0
+            },
+            {
+                visibility: 'hidden'
+            })
+        Velocity(forApartmentsList4,
+            {
+                opacity: 0,
+                top: 100
+            },
+            {
+                visibility: 'hidden'
+            })
+        Velocity(forApartmentsList3,
+            {
+                opacity: 0,
+                top: 100
+            },
+            {
+                visibility: 'hidden'
+            })
+        Velocity(forApartmentsList2,
+            {
+                opacity: 0,
+                top: 100
+            },
+            {
+                visibility: 'hidden'
+            })
+        Velocity(forApartmentsList1,
+            {
+                opacity: 0,
+                top: 100
+            },
+            {
+                visibility: 'hidden'
             })
     }
 
@@ -246,6 +292,15 @@ function animation() {
                 delay: 830,
                 easy: 'easy'
             });
+
+        Velocity(forApartmentsList,
+            {
+                opacity: 1
+            },
+            {
+                duration: 800,
+                visibility: 'visible'
+            })
         Velocity(forApartmentsList4,
             {
                 opacity: 1,
@@ -254,7 +309,7 @@ function animation() {
             {
                 duration: 500,
                 visibility: 'visible',
-                delay: 1200,
+                delay: 800,
                 easy: 'easy'
             })
         Velocity(forApartmentsList3,
@@ -265,7 +320,7 @@ function animation() {
             {
                 duration: 500,
                 visibility: 'visible',
-                delay: 1450,
+                delay: 1000,
                 easy: 'easy'
             })
         Velocity(forApartmentsList2,
@@ -276,7 +331,7 @@ function animation() {
             {
                 duration: 500,
                 visibility: 'visible',
-                delay: 1700,
+                delay: 1200,
                 easy: 'easy'
             })
         Velocity(forApartmentsList1,
@@ -287,8 +342,49 @@ function animation() {
             {
                 duration: 500,
                 visibility: 'visible',
-                delay: 1950,
+                delay: 1400,
                 easy: 'easy'
+            })
+
+            //возвращаем к начальным значениям
+        Velocity(forHomeList,
+            {
+                opacity: 0
+            },
+            {
+                visibility: 'hidden'
+            })
+        Velocity(forHomeList4,
+            {
+                opacity: 0,
+                top: 100
+            },
+            {
+                visibility: 'hidden'
+            })
+        Velocity(forHomeList3,
+            {
+                opacity: 0,
+                top: 100
+            },
+            {
+                visibility: 'hidden'
+            })
+        Velocity(forHomeList2,
+            {
+                opacity: 0,
+                top: 100
+            },
+            {
+                visibility: 'hidden'
+            })
+        Velocity(forHomeList1,
+            {
+                opacity: 0,
+                top: 100
+            },
+            {
+                visibility: 'hidden'
             })
     }
 }
