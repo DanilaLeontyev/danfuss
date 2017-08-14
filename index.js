@@ -23,6 +23,9 @@ function animation() {
     const forApartmentsList3 = document.getElementById('apartmentsList--item_3');
     const forApartmentsList4 = document.getElementById('apartmentsList--item_4');
 
+    const homeNextProposal = document.getElementById('homeNextProposal');
+    const apartNextProposal = document.getElementById('apartNextProposal');
+
     container.onclick = function (ev) {
         let target = event.target;
 
@@ -35,7 +38,7 @@ function animation() {
         else return;
     }
 
-    function animateHome(node) {
+    function animateHome() {
         forHome.style.display = 'block';
         forHomeTitle.style.display = 'block';
         forHomeList.style.display = 'block';
@@ -166,6 +169,18 @@ function animation() {
                 easy: 'easy'
             })
 
+        Velocity(apartNextProposal,
+            {
+                opacity: 1,
+                left: 50
+            },
+            {
+                duration: 800,
+                visibility: 'visible',
+                delay: 1000,
+                easy: 'easy'
+            })
+
 
         //возвращаем к начальным значениям
         Velocity(forApartmentsList,
@@ -207,9 +222,19 @@ function animation() {
             {
                 visibility: 'hidden'
             })
+        Velocity(homeNextProposal,
+            {
+                opacity: 0,
+                left: 900
+            },
+            {
+                duration: 800,
+                visibility: 'hidden',
+                easy: 'easy'
+            })
     }
 
-    function animateApartments(node) {
+    function animateApartments() {
         forApartmentTitle.style.display = 'block';
         forApartment.style.display = 'block';
         forApartmentsList.style.display = 'block';
@@ -346,7 +371,7 @@ function animation() {
                 easy: 'easy'
             })
 
-            //возвращаем к начальным значениям
+        //возвращаем к начальным значениям
         Velocity(forHomeList,
             {
                 opacity: 0
@@ -385,6 +410,29 @@ function animation() {
             },
             {
                 visibility: 'hidden'
+            })
+
+        Velocity(homeNextProposal,
+            {
+                opacity: 1,
+                left: 850
+            },
+            {
+                duration: 800,
+                visibility: 'visible',
+                delay: 1000,
+                easy: 'easy'
+            })
+
+        Velocity(apartNextProposal,
+            {
+                opacity: 0,
+                left: 0
+            },
+            {
+                duration: 800,
+                visibility: 'hidden',
+                easy: 'easy'
             })
     }
 }
