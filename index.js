@@ -166,7 +166,7 @@ function animation() {
 
             Velocity(apartNextProposal,
                 {
-                    opacity: 1,
+                    opacity: 0.5,
                     left: 65
                 },
                 {
@@ -414,7 +414,7 @@ function animation() {
 
             Velocity(homeNextProposal,
                 {
-                    opacity: 1,
+                    opacity: 0.8,
                     left: 860
                 },
                 {
