@@ -167,7 +167,7 @@ function animation() {
             Velocity(apartNextProposal,
                 {
                     opacity: 1,
-                    left: 50
+                    left: 65
                 },
                 {
                     duration: 800,
@@ -415,7 +415,7 @@ function animation() {
             Velocity(homeNextProposal,
                 {
                     opacity: 1,
-                    left: 850
+                    left: 860
                 },
                 {
                     duration: 800,
