@@ -27,6 +27,7 @@ function animation() {
     const apartNextProposal = document.getElementById('apartNextProposal');
 
     const chooseSection = document.getElementById('chooseSection');
+    const chooseSection1 = document.getElementById('chooseSectionApart');
 
     forHome.addEventListener('click', animateHome);
     forApartment.addEventListener('click', animateApartments);
@@ -39,6 +40,7 @@ function animation() {
         forHomeTitle.style.display = 'block';
         forHomeList.style.display = 'block';
         chooseSection.style.display = 'none';
+        chooseSection1.style.display = 'none';
 
         forApartmentsList.style.visibility = 'hidden';
         if (closeAnimationHome === false) {
@@ -46,7 +48,7 @@ function animation() {
             Velocity(forHome,
                 {
                     opacity: 1,
-                    width: "800px"
+                    width: "80%"
                 },
                 {
                     duration: 500,
@@ -57,7 +59,7 @@ function animation() {
             Velocity(forApartment,
                 {
                     opacity: 0.3,
-                    width: "200px"
+                    width: "20%"
                 },
                 {
                     duration: 500,
@@ -170,7 +172,7 @@ function animation() {
             Velocity(apartNextProposal,
                 {
                     opacity: 0.5,
-                    left: 65
+                    left: "4%"
                 },
                 {
                     duration: 800,
@@ -223,7 +225,7 @@ function animation() {
             Velocity(homeNextProposal,
                 {
                     opacity: 0,
-                    left: 900
+                    left: "90%"
                 },
                 {
                     duration: 800,
@@ -241,6 +243,7 @@ function animation() {
         forApartment.style.display = 'block';
         forApartmentsList.style.display = 'block';
         chooseSection.style.display = 'none';
+        chooseSection1.style.display = 'none';
 
         forHomeList.style.visibility = 'hidden';
 
@@ -248,7 +251,7 @@ function animation() {
             Velocity(forApartment,
                 {
                     opacity: 1,
-                    width: "800px"
+                    width: "80%"
                 },
                 {
                     duration: 500,
@@ -259,7 +262,7 @@ function animation() {
             Velocity(forHome,
                 {
                     opacity: 0.3,
-                    width: "200px"
+                    width: "20%"
                 },
                 {
                     duration: 500,
@@ -418,8 +421,8 @@ function animation() {
 
             Velocity(homeNextProposal,
                 {
-                    opacity: 0.8,
-                    left: 860
+                    opacity: 1,
+                    left: '84%'
                 },
                 {
                     duration: 800,
