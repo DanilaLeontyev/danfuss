@@ -421,7 +421,7 @@ function animation() {
 
             Velocity(homeNextProposal,
                 {
-                    opacity: 1,
+                    opacity: 0.5,
                     left: '84%'
                 },
                 {
