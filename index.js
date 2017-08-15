@@ -26,6 +26,8 @@ function animation() {
     const homeNextProposal = document.getElementById('homeNextProposal');
     const apartNextProposal = document.getElementById('apartNextProposal');
 
+    const chooseSection = document.getElementById('chooseSection');
+
     forHome.addEventListener('click', animateHome);
     forApartment.addEventListener('click', animateApartments);
 
@@ -36,6 +38,7 @@ function animation() {
         forHome.style.display = 'block';
         forHomeTitle.style.display = 'block';
         forHomeList.style.display = 'block';
+        chooseSection.style.display = 'none';
 
         forApartmentsList.style.visibility = 'hidden';
         if (closeAnimationHome === false) {
@@ -237,6 +240,7 @@ function animation() {
         forApartmentTitle.style.display = 'block';
         forApartment.style.display = 'block';
         forApartmentsList.style.display = 'block';
+        chooseSection.style.display = 'none';
 
         forHomeList.style.visibility = 'hidden';
 
