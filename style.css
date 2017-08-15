@@ -38,6 +38,10 @@
   background: url('img/jpg_1.jpg') no-repeat;
   background-size: 860px 1180px;
   background-position: 70% 60%;
+  transition: all 1s ease;
+}
+.forApartment:hover {
+  width: 65%;
 }
 
 .forHome {
@@ -47,6 +51,10 @@
   background: url('img/jpg_2.jpg') no-repeat;
   background-position: 30% 100%;
   background-size: cover;
+  transition: all 1s ease;
+}
+.forHome:hover {
+  width: 65%;
 }
 
 .forHome--square {
