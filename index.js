@@ -120,7 +120,8 @@ function animation() {
                 });
             Velocity(forHomeList,
                 {
-                    opacity: 1
+                    opacity: 1,
+                    width: '80%'
                 },
                 {
                     duration: 800,
@@ -191,7 +192,8 @@ function animation() {
             //возвращаем к начальным значениям
             Velocity(forApartmentsList,
                 {
-                    opacity: 0
+                    opacity: 0,
+                    width: 0
                 },
                 {
                     display: 'none'
@@ -339,7 +341,8 @@ function animation() {
 
             Velocity(forApartmentsList,
                 {
-                    opacity: 1
+                    opacity: 1,
+                    width: '80%'
                 },
                 {
                     duration: 800,
@@ -409,7 +412,8 @@ function animation() {
             //возвращаем к начальным значениям
             Velocity(forHomeList,
                 {
-                    opacity: 0
+                    opacity: 0,
+                    width: 0
                 },
                 {
                     display: 'none'
